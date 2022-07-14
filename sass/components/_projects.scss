@@ -1,4 +1,4 @@
-.projects {
+.project{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -9,25 +9,26 @@
     gap: 30px;
 }
 
-.project {
+.project__item {
     border: 1px solid var(--borderProject);
     padding-bottom: 20px;
     position: relative;
     overflow: hidden;
+}
 
-    &:hover,
-    &:focus {
+.project__item:hover,
+.project__item:focus {
         box-shadow: 0px 1px 1px var(--boxShadow1), 0px 4px 4px var(--boxShadow2),
             1px 4px 6px var(--boxShadow3);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
     }
 
-    &:hover .project__overlay {
+.project__item:hover .project__overlay {
     transform: translatex(0);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}
+
 .project__overlay {
     position: absolute;
     top: 0;
