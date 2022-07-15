@@ -9,6 +9,7 @@
 
     &__mail {
     color: var(--fontLight);
+    text-decoration: none;
     }
 
     &__mail:hover,
@@ -19,7 +20,9 @@
 
 
     &__phone {
-    color: var(--fontLight);}
+    color: var(--fontLight);
+text-decoration: none;
+}
 
     &__phone:hover,
     &__phone:focus {
