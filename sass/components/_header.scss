@@ -3,32 +3,37 @@
     border-bottom: 1px solid var(--borderLight);
 }
 
-.head {
+.header__box {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
 
-    &__menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 94px;
-}
-}
-.head__navigation {
+.header__menu {
+        display: flex;
+        justify-content: space-between;
+
+        gap: 94px;
+    }
+
+
+.header__navigation {
     margin: 0;
     padding-top: 0;
 }
 
-.head__menu {
+.header__menu {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+padding-top: 28px;
     padding-left: 0px;
     margin: 0;
     gap: 46px;
 }
 
-.head__link {
+.header__link {
     display: block;
     font-family: "roboto";
     font-size: 14px;
@@ -39,9 +44,9 @@
 
     &:hover,
     &:focus {
-    color: var(--blueColor);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+        color: var(--blueColor);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 }
 
@@ -51,18 +56,18 @@
     justify-content: space-between;
 
     &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: -36px;
-    background-color: var(--blueColor);
-}
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: -40px;
+        background-color: var(--blueColor);
+    }
 }
 
 
-.head__contact {
+.header__contacts {
     display: flex;
     gap: 30px;
     align-items: baseline;
@@ -70,7 +75,7 @@
     padding-top: 32px;
 }
 
-.head__link {
+.header__contact {
     display: inline;
     color: var(--fontGrey);
     text-decoration: none;
@@ -83,27 +88,27 @@
 
     &:hover,
     &:focus {
-            color: var(--blueColor);
-            fill: var(--blueColor);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        color: var(--blueColor);
+        fill: var(--blueColor);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
-.head__mail:hover,
-.head__mail:focus,
-.head__phone:hover,
-.head__phone:focus {
+.header__mail:hover,
+.header__mail:focus,
+.header__phone:hover,
+.header__phone:focus {
     color: var(--blueColor);
     fill: var(--blueColor);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head__mail-icon {
+.header__mail-icon {
     width: 16px;
     height: 12px;
 }
 
-.head__phone-icon {
+.header__phone-icon {
     width: 10px;
     height: 16px;
 }
