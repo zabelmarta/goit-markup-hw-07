@@ -14,9 +14,10 @@
     width: 528px;
     min-height: 581px;
     background-color: var(--colorLight);
-}
+    transition: opacity 250ms;
 
-.close-btn {
+
+    &__close-btn {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -26,7 +27,7 @@
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
-
+    }
 
     &__icon {
     width: 30px;

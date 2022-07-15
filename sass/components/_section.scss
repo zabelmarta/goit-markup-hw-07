@@ -18,3 +18,25 @@
     padding-top: 50px;
     }
 }
+
+.section__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+    gap: 30px;
+}
+
+.section__title {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+    padding-right: auto;
+    padding-bottom: 50px;
+    font-size: 36px;
+}
