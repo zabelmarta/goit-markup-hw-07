@@ -10,7 +10,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: getColor(fontDeepDark);
+    color: var(--fontDeepDark);
     margin-top: 40px;
     margin-bottom: 12px;
 }
@@ -19,9 +19,9 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.01em;
-    color: getColor(fontGrey);
+    color: var(--fontGrey);
     padding-bottom: 10px;
-
+}
     .form__icon--person {
         top: 108px;
         left: 52px;
@@ -37,13 +37,13 @@
                     left: 53.5px;
                     position: absolute
                 }
-}
+
 
 .form__input {
     display: block;
     width: 448px;
     height: 40px;
-    border: 1px solid getColor(borderForm);
+    border: 1px solid var(--borderForm);
     border-radius: 4px;
     padding-left: 40px;
     outline: none;
@@ -54,8 +54,8 @@
 &:focus-within+.form__icon--person,
 &:focus-within+.form__icon--tele,
 &:focus-within+.form__icon--mail {
-    border-color: getColor(blueColor);
-    fill: getColor(blueColor);
+    border-color: var(--blueColor);
+    fill: var(--blueColor);
 }
 }
 
